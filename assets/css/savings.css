@@ -14,7 +14,21 @@ body{
     text-align: center;
     font-size: 50px;
     color: #2f58cd;
+    margin-top: 10px;
     font-family: 'Roboto', sans-serif;
+}
+.getstarted{
+    height: 70px;
+    text-align: left;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #e9effd;
+    color: #2f58cd;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+
 }
 .columns{
     display: flex;
@@ -25,12 +39,15 @@ body{
 .column{
     flex:15%;
     margin: 30px;
-    height: 150px;
+    height: 180px;
     text-align: center;
     border-radius: 20px;
     padding: 10px;
     background-color: #2f58cd;
     color: #fff;
+}
+.column i{
+    font-size: 70px;
 }
 .column h1{
     font-family: 'Montserrat', sans-serif;
@@ -49,9 +66,9 @@ a {
     text-decoration: none;
 }
 
-/* Responsive sreen */
+/* Responsive screen */
 @media screen and(max-width:480px){
-    .columns .column{
+    .columns .column .getstarted{
         flex-basis: 100%;
         margin: 0 0 5px 0;
     }
