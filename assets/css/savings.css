@@ -24,7 +24,7 @@ body{
 }
 .title{
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     color: #2f58cd;
     margin-top: 10px;
     font-family: 'Roboto', sans-serif;
@@ -38,7 +38,7 @@ body{
 .column{
     flex:15%;
     margin: 30px;
-    height: 180px;
+    height: 150px;
     text-align: center;
     border-radius: 20px;
     padding: 10px;
