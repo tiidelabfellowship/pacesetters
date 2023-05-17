@@ -4,68 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact page</title>
-    <link rel="stylesheet" href="./assets/css/contact.css">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./contact.css">
     <script src="https://kit.fontawesome.com/3508598907.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="contact">
-        <div class="content">
-            <h2> Contact Us</h2>
-            <p>If you need assistance with our budget planner website or have any feedback to share, 
-                please use the contact form below to get in touch with us. </p>
-        </div>
+        <!--<div class="contactHead">
+            <p> Great vision without great people is irrelevant.</p> 
+            <p> Let's work together.</p>
+        </div>-->
 
         <div class="container">
-            <!--<div class="contactInfo">
-                <div class="box">
-                    <div class="icon"><i class="fa-solid fa-location-dot lct"></i></div>
-                    <div class="text">
-                        <h3> Address</h3>
-                        <p> ##########</p>
-                    </div>
+            <div class="contactInfo">
+            <h2> Contact Us</h2>
+            <p> Our mailing address is: <br> Zone 6, 2 Harrane St, <br> Wuse 900286, Abuja, Federal Capital Territory. <br> Phone: 0817-709-8608</p>
+                <div class="icons">
+                    <i class="fa-brands fa-linkedin lkd"></i>
+                    <i class="fa-brands fa-twitter twt"></i>
+                    <i class="fa-brands fa-facebook fb"></i>
+                    <i class="fa-brands fa-instagram inst"></i>
+                    <i class="fa-brands fa-google ggl"></i>
                 </div>
+            </div>
 
-                <div class="box">
-                    <div class="icon"><i class="fa-solid fa-phone phn"></i></div>
-                    <div class="text">
-                        <h3> Phone</h3>
-                        <p> ##########</p>
-                    </div>
+            <div id="contactForm">
+                <div class="contactHead">
+                   <div class="contactHead-1"> <p> Great vision without great people is irrelevant.</p></div>
+                    <div class="contactHead-2"><p> Let's work together.</p></div>
                 </div>
-
-                <div class="box">
-                    <div class="icon"><i class="fa-solid fa-envelope env"></i></div>
-                    <div class="text">
-                        <h3> Email</h3>
-                        <p> ##########</p>
-                    </div>
-                </div>
-            </div>-->
-
-            <div class="contactForm">
+                
                 <form>
-                    <h2> Send Message</h2>
-                    <div class="inputBox">
-                        <input type="text" name="" required="required">
-                        <span> Full name</span>
-                    </div>
-
-                    <div class="inputBox">
-                        <input type="text" name="" required="required">
-                        <span> Email</span>
-                    </div>
-
-                    <div class="inputBox">
-                       <textarea name="" id="" cols="30" rows="10" required="required"></textarea>
-                        <span> Message..</span>
-                    </div>
-
-                    <button class="btn"> Send</button>
-
+                    <input type="text" id="name" placeholder=" Enter your Name" required>
+                    <input type="email" id="email" placeholder=" Enter your email address" required>
+                    <textarea name="" id="message" cols="30" rows="10" placeholder=" Enter your message" required></textarea>
                 </form>
+                <button type="submit" class="btn" id="submit-btn"> Submit</button>
+
+                <div id="response"></div>
             </div>
         </div>
     </section>
+
+    <script src="./contact.js"></script>
 </body>
 </html>

@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+<<<<<<< HEAD
 }
 
 .contact{
@@ -145,15 +146,132 @@
 .contactForm .btn:hover{
     background-color: black;
     color: white;
+=======
+    
+}
+
+.contact{
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    padding: 20px 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: whitesmoke ;  
+    /*color: white;*/
+}
+
+.contact .contactHead{
+    margin-bottom: 20px;
+    font-size: 17px;
+    margin-left: -160px;   
+}
+
+.contactHead-2{
+    margin-left: -180px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    line-height: 70px;
+    margin-right: 300px; 
+    margin-top: -100px;   
+}
+
+h2{
+    font-size: 50px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: ;
+}
+
+.contactInfo p{
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+#contactForm{
+    width: 40%;
+    margin-left: -100px;
+    margin-top: -120px;
+}
+
+#contactForm input,
+textarea{
+    position: relative;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button{
+    padding: 12px;
+    background-color: #016dcb;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    margin-right: 400px;
+    font-weight: 350;
+}
+
+button:hover{
+  background-color: #8b8b8b;
+  
+}
+
+.lkd, .twt, .fb, .inst, .ggl{
+    padding: 7px;
+}
+
+.lkd:hover{
+    color: #016dcb;
+} 
+.twt:hover{
+    color: #016dcb;
+} 
+.fb:hover{
+    color: #016dcb;
+} 
+.inst:hover{
+    color: #016dcb;
+} .ggl:hover{
+    color: #016dcb;
+>>>>>>> b19d881cea2db5f422e53ae4975e40492edb60d4
 }
 
 @media (max-width: 991px){
     .contact{
+<<<<<<< HEAD
         padding: 50px;
+=======
+        padding: 150px;
+        text-align: center;
+        align-items: center;
+        
+
+        
+>>>>>>> b19d881cea2db5f422e53ae4975e40492edb60d4
     }
     .container{
         flex-direction: column;
     }
+<<<<<<< HEAD
     .container .contactInfo{
         margin-bottom: 40px;
     }
@@ -161,4 +279,25 @@
     .contactForm{
         width: 100px;
     }
+=======
+    .contactInfo{
+        margin-bottom: 150px;
+        display: flex;
+        flex-direction: row;
+        min-width: 100%;   
+    }
+
+    .container .contactInfo,
+    #contactForm{
+        width: 100px;
+    }
+
+    form, button{
+        margin-left: -170px;
+    }
+
+    .contactHead-2{
+        margin-left: 5px;
+    }
+>>>>>>> b19d881cea2db5f422e53ae4975e40492edb60d4
 }
