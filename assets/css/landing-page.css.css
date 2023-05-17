@@ -3,52 +3,62 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
     /* background-image: url(./imgs/background.jpg); */
 }
-
-/* header */
 a{
     text-decoration: none;
 }
+
+
 header{
     display: flex;
-    /* background-color: darkorchid; */
-    /* color: white; */
     justify-content: space-between;
-    padding: 30px;
-    /* margin:10px 30px; */
     border-radius: 20px;
+    position: relative;
+    margin: 5px 5px;
+    padding: 20px 50px;
+}
+
+/* mobile interface disabled */
+.mobile-auth{
+    display: none;
+}
+.bars{
+    display: none;
 }
 
 .logo a{
     color: black;
     font-family: 'Dancing Script', cursive;    font-size: 30px;
     font-weight: bolder;
-
 }
 nav{
-    margin-top: 10px;
-}
+    margin-right: 20px;
+    text-align: center;
+    padding-top: 7px;
+} 
 nav a{
     color: black;
     font-family: 'Roboto', sans-serif;
-    padding: 8px 15px;
+    padding: 8px 12px;
     font-size: 17px;
 }
 nav a:hover{    
     color: white;
     background-color: black;
-    /* font-weight: bold; */
     border-radius: 10px;
-}
-.sign{
-    /* padding: 10px; */
+    transition: 0.2s ease-in;
+  
+
 }
 
+.sign{
+    padding-top: 7px;
+}
 .sign .sign-up{
     color: black;
     background-color: white;
-    /* padding: 5px 9px; */
     border: black solid 1.5px;
     border-radius: 10px;
     padding: 10px 30px;
@@ -59,8 +69,8 @@ nav a:hover{
 .sign .sign-up:hover{
     color: white;
     background-color: black;
+    transition: 0.2s ease-in;
 }
-
 .sign .sign-in{
     color: white;
     background-color: #27318d;
@@ -71,9 +81,10 @@ nav a:hover{
     font-size: 17px;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
-}
+} 
 .sign .sign-in:hover{
     background-color: #5968eb;
+    transition: 0.2s ease-in;
     
 }
 
@@ -87,46 +98,59 @@ nav a:hover{
 
 }
 .write-up h3{
-    /* max-width: 300px; */
-    font-family: 'Comme', sans-serif;}
-
+    font-family: "Unbounded", cursive;
+} 
 .write-up{
     padding-left: 20px;
     align-content: center;
-    /* margin: auto; */
     margin-top: 40px ;
     font-size: 30px;
     color: black;
 }
 .write-up p {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .sign-up-btn{
     border: none;
     color: white;
     padding: 13px 18px;
     font-size: 20px;
-    /* font-weight: bold; */
     background-color: #27318d;
     border-radius: 10px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .sign-up-btn:hover{
     background-color: #6371f4;
 }
 
-/* .download {
-    margin-top: 40px;
-}
-.download img{
-    width: 180px;
-    height: 50px;
-} */
-
 .img-container img{
     width: 400px;
     height: 500px;
 }
+
+/* FOR SLIDER */
+
+/* .slide{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.write-up{
+    text-align: center;
+    align-items: center;
+} */
+
+
+
+
+
+
+
+
 
  
 
@@ -140,6 +164,7 @@ nav a:hover{
 h2 {
     text-align: center;
     font-size: 40px;
+    font-family: "Unbounded", cursive;
 
 }
 .heading-explain{
@@ -187,14 +212,9 @@ h2 {
 .video-write-up {
     margin:0px 80px;
     text-align: center;
-    /* padding: 50px; */
-    /* max-width: 400px; */
-}
-.video-flex .sign-up-btn{
-    /* padding-top: 30px; */
 }
 .video-write-up h3{
-    font-family: 'Roboto', sans-serif;
+    font-family: "Unbounded", cursive;
     font-size: 30px;
 }
 .video-write-up p{
@@ -206,11 +226,10 @@ h2 {
 
 
 
-
+/* footer section */
 footer{
     border-top: rgb(190, 183, 183) 2px solid;
-    margin:60px 5px;
-    /* padding: 0px 12px; */
+    margin:60px 5px 0px 5px;
 }
 .main-footer{
     display: grid;
@@ -218,17 +237,14 @@ footer{
     text-align: center;
 }
 footer h4{
-    font-family: 'Roboto', sans-serif;
+    font-family: "Unbounded", cursive;
     font-size: 20px;
 }
 .brand-logo{
     margin: auto;
 }
 
-/* .download-btns img{
-    width: 130px;
-    height: 40px;
-} */
+
 .btn-holder{
     display: flex;
     flex-direction: column;
@@ -275,6 +291,19 @@ background-color:  #6371f4;
     background-color: rgb(209, 206, 206);
 
 }
+.copyright{
+    background-color: rgb(246, 246, 246);
+    height: 30px;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+
+}
+.copyright span{
+    font-size: 12px;
+    font-family: "Unbounded", cursive;
+    /* margin-top: 40px; */
+}
 
 
 
@@ -282,15 +311,83 @@ background-color:  #6371f4;
 
 
 
-@media(max-width:768px){
+
+
+
+
+@media screen and (max-width:768px){
+    /* desktop bottons disabled */
+    .sign{
+        display: none;
+    }
+
+
+    /* mobile buttons enabled */
+    .mobile-auth{
+        display: block;
+    }
+    .bars{
+        display: block;
+        color: black;
+        font-size: 30px;
+        background: none;
+        cursor: pointer;
+    }
+    
+    header{
+        position: relative;
+        display:flex;
+    }
+    nav{
+        position:absolute ;
+        display: block;
+        top: 70px;
+        left: 0;
+        width: 100vw;
+        height: 70vh;
+        margin-bottom: 40px;
+        /* padding:80px; */
+        background-color: #6371f4;
+        box-sizing: border-box;
+        transition: 1s ease-in-out;
+        border-top-left-radius: 80px;
+        border-bottom-right-radius: 80px;
+        display: none;
+    }
+    .show{
+        display: block;
+    }
+    nav a{
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        background-color:   rgb(82, 82, 82);
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 10px;
+        width: 180px;  
+    }
+    nav a:hover{
+        background-color: black;
+        color: white;
+    }
+
+
+    .mobile-auth > a{
+        background-color: white;
+        color: black;
+    }
+    .mobile-auth > a:hover{
+        color: white;
+        background-color: rgb(82, 82, 82);
+    }
+
     .write-up h3{
         font-size: 20px;
-        /* padding:0px px; */
     }
-   
     .write-up p{
         font-size: 26px;
-        /* padding-right: 35px; */
         min-width: 350px;
     }
     .sign-up-btn{
@@ -303,11 +400,13 @@ background-color:  #6371f4;
         width: 200px;
         height: 350px;
     }
+
+
     /* features section styling */
 
 
     h2{
-        font-size: 30px;
+        font-size: 20px;
     }
     .heading-explain{
         font-size: 16px;
@@ -353,7 +452,7 @@ background-color:  #6371f4;
 
 
     .main-footer{
-        display: gr;
+        /* display: gr; */
     }
 
     footer h4{
@@ -374,11 +473,44 @@ background-color:  #6371f4;
 
 
 
+
+
+
+
+
+
+
+
+
 /* media query for mobile */
 @media(max-width:426px){
     body {
         margin: 0px auto;
     }
+    .bars{
+        font-size: 20px;
+    }
+    nav{
+        width: 100vw;
+        height: 85vh;
+        border-top-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+        padding-top: 60px;
+    }
+    .show{
+        display: block;
+    }
+    nav a{
+        font-size: 10px;
+        width: 100px;  
+        padding: 10px 0px;
+    }
+
+
+
+
+
+
 
     /* home section */
     .landing-page{
@@ -388,9 +520,11 @@ background-color:  #6371f4;
     }
     .write-up h3{
         font-size: 16px;
+        align-items: center;
     }
     .write-up p{
         font-size: 23px;
+        align-items: center;
     }
     .sign-up-btn {
         font-size: 15px;
@@ -466,7 +600,127 @@ background-color:  #6371f4;
         padding: 7px;
         font-size: 15px;
     }
-       
+}
 
+
+
+
+@media(max-width:375px) {
+
+    .bars .fa-bars{
+        position: absolute;
+        right: 0px;
+    
+    }
+    nav{
+        width: 100vw;
+        height: 100vh;
+        border-top-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+        padding-top: 60px;
+    }
+    .show{
+        display: block;
+    }
+    nav a{
+        font-size: 10px;
+        width: 100px;  
+        padding: 10px 0px;
+    }
+
+
+
+
+
+
+
+    /* home section */
+    .landing-page{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .write-up h3{
+        font-size: 16px;
+        align-items: center;
+    }
+    .write-up p{
+        font-size: 23px;
+        align-items: center;
+    }
+    .sign-up-btn {
+        font-size: 15px;
+    }
+    .img-container{
+        margin: auto;
+        /* height: 50px; */
+        margin-top:-130px ;
+    }
+
+
+
+    /* feature section */
+    .feature-flex{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+
+    /* tracking section */
+    .tracking{
+        margin-top:80px;
+    }
+    .video-flex{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    /* .mp4-holder{
+        height: 10px;
+    } */
+    .video-write-up h3{
+        font-size: 16px;
+    }
+    .video-write-up p{
+        font-size: 13px;
+    }
+    .video-write-up a{
+        font-size: 10px;
+    }
+
+
+    /* footer section */
+    footer{
+        border-top: rgb(190, 183, 183) 1px solid;
+    }
+
+    .brand-logo{
+        margin-top: 50px;
+    }
+    .main-footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: space-between;
+    }
+    footer h4{
+        font-size: 15px;
+    }
+    .support{
+        margin-top: 40px;
+    }
+    .support .cs{
+        font-size: 11px;
+    }
+    .support .faq{
+        font-size: 12px;
+        padding: 7px 45px;
+    }
+    .socials{
+        margin-top: 40px;
+    }
+    .socials a{
+        padding: 7px;
+        font-size: 15px;
+    }
 
 }
