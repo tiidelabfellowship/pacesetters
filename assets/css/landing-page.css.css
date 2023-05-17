@@ -495,6 +495,75 @@ background-color:  #6371f4;
     .bars{
         font-size: 20px;
     }
+
+
+    /* features section styling */
+
+
+
+
+    .landing-page{
+        padding-bottom: 120px;
+    }
+    .write-up h3{
+        font-size: 20px;
+    }
+    .write-up p{
+        font-size: 22px;
+        min-width: 300px;
+        padding-right: 70px;
+        align-items: center;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+    .heading-explain{
+        font-size: 16px;
+        pa
+    }
+    .feature-flex{
+        margin: 20px;
+    }
+
+    .flex-item i{
+        font-size: 35px;
+    }
+    .flex-item h4{
+        font-size: 20px;
+    }
+    .flex-item p{
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        border-radius: 20px;
+        position: relative;
+        margin: 0px 5px;
+        padding: 20px 50px;
+    }
     nav{
         width: 100vw;
         height: 85vh;
@@ -529,7 +598,8 @@ background-color:  #6371f4;
     }
     .write-up p{
         font-size: 23px;
-        align-items: center;
+        /* align-items: center; */
+        padding-right: 30px;
     }
     .sign-up-btn {
         font-size: 15px;
@@ -537,7 +607,10 @@ background-color:  #6371f4;
     .img-container{
         margin: auto;
         /* height: 50px; */
-        margin-top:-130px ;
+        /* margin-top:-130px ; */
+        position: absolute;
+        top: 1600px;
+        left: 100px;
     }
 
 
@@ -547,12 +620,18 @@ background-color:  #6371f4;
         display: grid;
         grid-template-columns: 1fr;
     }
+    .features h2{
+        padding: 0px 20px;
+    }
+    .heading-explain{
+        padding: 0px 50px;
+    }
 
 
 
     /* tracking section */
     .tracking{
-        margin-top:80px;
+        /* margin-top:80px; */
     }
     .video-flex{
         display: grid;
@@ -568,7 +647,7 @@ background-color:  #6371f4;
         font-size: 13px;
     }
     .video-write-up a{
-        font-size: 10px;
+        font-size: 12px;
     }
 
 
@@ -592,11 +671,11 @@ background-color:  #6371f4;
         margin-top: 40px;
     }
     .support .cs{
-        font-size: 11px;
+        font-size: 13px;
     }
     .support .faq{
-        font-size: 12px;
-        padding: 7px 45px;
+        font-size: 13px;
+        padding: 9px 50px;
     }
     .socials{
         margin-top: 40px;
