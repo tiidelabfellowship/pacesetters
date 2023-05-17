@@ -1,22 +1,22 @@
-document.getElementsById("submit-btn").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent form submission
-  
-    // Get form values
-    const name = document.getElementById("name");
-    const email = document.getElementById("email");
-    const message = document.getElementById("message");
-  
-    // Perform validation (if required)
-  
-    // Create the response message
-    const responseMessage = "Thank you, " + name + "! Your message has been received.";
+//here i passed all parameters i need into variables
 
-     // Display the response message
-  const responseElement = document.getElementById("response");
-  responseElement.innerText = responseMessage;
+const username = document.getElementById("name");
+const email = document.getElementById("email");
+const message = document.getElementById("message");
+let responseMessage = document.getElementById("response");
 
-  // Clear the form inputs
-  document.getElementById("name").value = "";
-  document.getElementById("email").value = "";
-  document.getElementById("message").value = "";
+document.getElementById("submit-btn").addEventListener("click", function (event){
+  event.preventDefault(); //prevent form submission
+  if (username.value && email.value && message.value) {
+    responseMessage.innerHTML = "<span> Thank you," + username.value + "! Your message has been received. </span>";
+    username.value = "";
+    email.value ="";
+    message.value ="";
+
+    //display the response message
+    responseMessage.style.color = "green";
+  } else {
+    responseMessage.innerHTML = "<span> All input must be filled Please!</span>";
+    responseMessage.style.color = "red";
+  }
 });

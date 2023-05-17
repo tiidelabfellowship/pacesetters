@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-<<<<<<< HEAD
+
 }
 
 .contact{
@@ -145,9 +145,7 @@
 
 .contactForm .btn:hover{
     background-color: black;
-    color: white;
-=======
-    
+    color: white;    
 }
 
 .contact{
@@ -159,18 +157,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: whitesmoke ;  
-    /*color: white;*/
+    background-color: white ;  
+    color: #27318d;
 }
 
 .contact .contactHead{
     margin-bottom: 20px;
-    font-size: 17px;
-    margin-left: -160px;   
-}
+    font-size: 19px; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold; 
+    /*text-align: center;*/
 
-.contactHead-2{
-    margin-left: -180px;
 }
 
 .container{
@@ -194,19 +191,22 @@ h2{
     margin-top: -20px;
     margin-bottom: 20px;
     font-weight: 700;
-    font-family: ;
+    font-family: "Unbounded", cursive;
 }
 
 .contactInfo p{
     font-size: 16px;
     margin-bottom: 30px;
     line-height: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 #contactForm{
     width: 40%;
     margin-left: -100px;
     margin-top: -120px;
+    text-align: center;
 }
 
 #contactForm input,
@@ -215,7 +215,7 @@ textarea{
     width: 100%;
     border: 1px solid black;
     border-radius: 8px;
-    padding: 10px;
+    padding: 17px;
     margin-bottom: 10px;
 }
 
@@ -235,51 +235,32 @@ button:hover{
   
 }
 
-.lkd, .twt, .fb, .inst, .ggl{
+.icons i{
     padding: 7px;
+    font-size: 30px;
+    padding: 10px;
+    border: 1px solid rgb(102, 98, 98);
+    border-radius: 50%;
+    color: rgb(65, 63, 63) ;
+    margin-right: 10px;
 }
 
-.lkd:hover{
-    color: #016dcb;
-} 
-.twt:hover{
-    color: #016dcb;
-} 
-.fb:hover{
-    color: #016dcb;
-} 
-.inst:hover{
-    color: #016dcb;
-} .ggl:hover{
-    color: #016dcb;
->>>>>>> b19d881cea2db5f422e53ae4975e40492edb60d4
+.icons i:hover{
+    color:#016dcb ;
 }
+
 
 @media (max-width: 991px){
     .contact{
-<<<<<<< HEAD
-        padding: 50px;
-=======
         padding: 150px;
         text-align: center;
         align-items: center;
-        
-
-        
->>>>>>> b19d881cea2db5f422e53ae4975e40492edb60d4
     }
+
     .container{
         flex-direction: column;
     }
-<<<<<<< HEAD
-    .container .contactInfo{
-        margin-bottom: 40px;
-    }
-    .container .contactInfo,
-    .contactForm{
-        width: 100px;
-    }
-=======
+  
     .contactInfo{
         margin-bottom: 150px;
         display: flex;
@@ -287,17 +268,16 @@ button:hover{
         min-width: 100%;   
     }
 
-    .container .contactInfo,
-    #contactForm{
-        width: 100px;
-    }
-
     form, button{
         margin-left: -170px;
     }
 
-    .contactHead-2{
-        margin-left: 5px;
+    .contactHead{
+        width: 200px;
+        margin-left: -150px;
     }
->>>>>>> b19d881cea2db5f422e53ae4975e40492edb60d4
+
+    #contactForm{
+        width: 100px;
+    }
 }
