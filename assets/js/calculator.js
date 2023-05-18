@@ -99,5 +99,5 @@ checkAmountButton.addEventListener("click", () => {
   listCreator(productTitle.value, userAmount.value);
   //Empty inputs
   productTitle.value = "";
-  userAmount.value = "";
+  userAmount.value = "";
 });
