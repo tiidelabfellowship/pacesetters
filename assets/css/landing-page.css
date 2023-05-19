@@ -95,6 +95,7 @@ nav a:hover{
     display: flex;
     margin: 50px;
     gap: 200px;
+    height: 100vh;
 
 }
 .write-up h3{
