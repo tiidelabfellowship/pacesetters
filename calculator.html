@@ -15,8 +15,52 @@
     />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./assets/css/calculator.css">
+    <link rel="stylesheet" href="./assets/css/landing-page.css">
   </head>
   <body>
+    <header>
+
+      <!-- brand -->
+      <div class="logo"><a href="./index.html">eBUDGET</a></div>
+
+      <button class="bars" id="bars">
+          <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- nav items-->
+      <nav class="navbar">
+        <a href="./index.html" class="active">Home</a>
+        <a href="./savings.html">Savings Plan</a>
+        <!-- <a href="./calculator.html">Calculator</a> -->
+        <a href="#">Budget</a>
+        <a href="#">About Us</a>
+        <a href="./contact.html">Contact Us</a>
+        <!-- mobile sign-up -->
+        <div class="mobile-auth">
+          <a href="./signup.html" class="sign-up">Sign Up</a>
+          <a href="./signin.html" class="sign-in">Sign In</a>
+        </div>
+      </nav>
+
+      <div class="sign">
+        <a href="./signup.html" class="sign-up">Sign Up</a>
+        <a href="./signin.html" class="sign-in">Sign In</a>
+      </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- caculator container -->
+
+
     <div class="wrapper">
       <div class="container">
         <div class="sub-container">
@@ -76,6 +120,47 @@
         <div class="list-container" id="list"></div>
       </div>
     </div>
+
+    <footer>
+      <div class="main-footer">
+        <div class="brand-logo">
+          <div class="logo"><a href="./index.html">eBUDGET</a></div>
+        </div>
+
+        <div class="support">
+          <h4>Have Any Questions</h4>
+          <div class="btn-holder">
+            <div>
+              <a href="./contact.html" class="cs">Contact Support</a>
+            </div>
+            <div>
+              <a href="#" class="faq">FAQ</a>
+            </div>
+          </div>
+          </div>
+            <div class="socials">
+              <h4>Follow Us</h4>
+              <div>
+                <a href="#" class="fa-brands fa-facebook-f"></a>
+                <a href="#" class="fa-brands fa-twitter"></a>
+                <a href="#" class="fa-brands fa-instagram"></a>
+                <a href="#" class="fa-brands fa-linkedin-in"></a>
+              </div>
+          </div>
+        </div>
+
+        <!-- <div class="copyright">
+          <span>Powered By The Pacesetters &copy</span>
+          <span id="copyright">
+            <script>
+              document.getElementById("copyright").appendChild(
+              document.createTextNode(new Date().getFullYear(
+              )))   
+            </script>
+          </span>
+        </div> -->
+
+    </footer>
     <!-- Script -->
     <script src="./assets/js/calculator.js"></script>
   </body>
