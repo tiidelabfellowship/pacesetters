@@ -153,3 +153,15 @@ checkAmountButton.addEventListener("click", () => {
   productTitle.value = "";
   userAmount.value = "";
 });
+// Get the username parameter from the URL
+const urlParams = new URLSearchParams(window.location.search);
+const email = urlParams.get("email");
+
+const usernameElement = document.getElementById("usertext");
+
+if (email) {
+  usernameElement.textContent = email;
+} else {
+  usernameElement.textContent = "Unknown";
+}
+

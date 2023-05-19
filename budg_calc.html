@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator</title>
+    <link rel="stylesheet" href="assets/css/budg_calc.css">
+</head>
+<body>
+    
+    <!-- <div class="container-fluid center-meh-boi">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-1">
+      <div class="box-of-stuff">
+              <form>
+  <input class="form-control input-lg" type="text" id="income" placeholder="Monthly Income"/>
+  <input class="form-control input-lg" type="text" id="rent" placeholder="Rent"/>
+  <input class="form-control input-lg" type="text" id="food" placeholder="Food"/>
+  <input class="form-control input-lg" type="text" id="utilities" placeholder="Utilities"/>
+  <input class="form-control input-lg" type="text" id="insurance" placeholder="Insurance"/>
+      </form>
+      <button class="btn btn-primary btn-lg btn-block" id=" button">Submit</button>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="results">
+        <h1 class="title">Results</h1>
+        <span class="emoji">
+        </span>
+        <div class="results-data" >
+          <p>Hit that submit button to see your results!</p>
+        </div>
+</div>
+    </div>
+  </div>
+</div> -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Budget Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Budget Calculator</h1>
+  <div class="input-div">
+    <div class="input-group">
+    <label>Income:</label>
+    <input type="number" id="income" min="0">
+  </div>
+  
+  <div class="input-group">
+    <label>Expenses:</label>
+    <input type="number" id="expenses" min="0">
+  </div>
+  
+  <div class="input-group">
+    <button onclick="calculateBudget()">Calculate</button>
+  </div>
+  
+  <div class="result">
+    <label>Your budget: $</label>
+    <span id="budget"></span>
+  </div>
+  </div>
+  
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<script src="assets/js/budg_calc.js"></script>
+</body>
+</html>
