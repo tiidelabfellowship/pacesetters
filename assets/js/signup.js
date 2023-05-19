@@ -3,7 +3,8 @@ const form = document.querySelector("form"),
   emailInput = emailField.querySelector(".email"),
   passField = form.querySelector(".create-password"),
   passInput = passField.querySelector(".password"),
-  cPassField = form.querySelector(".confirm-password");
+  cPassField = form.querySelector(".confirm-password"),
+  cPassInput = cPassField.querySelector(".cPassword");
 
 // Email Validation
 function checkEmail() {
@@ -40,20 +41,36 @@ function createPass() {
   passField.classList.remove("invalid");
 }
 
+// Confirm password validation
+function confirmPass() {
+  if (passInput.value !== cPassInput.value || cPassInput.value === "") {
+    return cPassField.classList.add("invalid");
+  }
+  cPassField.classList.remove("invalid");
+}
+
 // Calling Function on Form Submit
 form.addEventListener("submit", (e) => {
   e.preventDefault(); //preventing form submitting
   checkEmail();
   createPass();
+  confirmPass();
 
   // calling function on key up
   emailInput.addEventListener("keyup", checkEmail);
   passInput.addEventListener("keyup", createPass);
+  cPassInput.addEventListener("keyup", confirmPass);
 
   if (
     !emailField.classList.contains("invalid") &&
-    !passField.classList.contains("invalid")
+    !passField.classList.contains("invalid") &&
+    !cPassField.classList.contains("invalid")
   ) {
-    location.href = form.getAttribute("action");
+    // location.href = form.getAttribute("action");
+    swal({
+      title: "Successful!",
+      text: "Check your inbox to confirm the email!",
+      icon: "success",
+    });
   }
 });

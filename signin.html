@@ -21,18 +21,38 @@
         <div class="form-container">
           <header>Login</header>
           <form action="#">
-            <div class="field input-field">
-              <input type="email" placeholder="Email" class="input" />
+            <div class="field email-field">
+              <div class="input-field">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="email"
+                />
+              </div>
+              <span class="error email-error">
+                <i class="bx bx-error-circle error-icon"></i>
+                <p class="error-text">Please enter a valid email</p>
+              </span>
             </div>
-            <div class="field input-field">
-              <input type="password" placeholder="Password" class="password" />
-              <i class="bx bx-hide eye-icon"></i>
+            <div class="field create-password">
+              <div class="input-field">
+                <input
+                  type="password"
+                  placeholder="Create password"
+                  class="password"
+                />
+                <i class="bx bx-hide show-hide"></i>
+              </div>
+              <span class="error password-error">
+                <i class="bx bx-error-circle error-icon"></i>
+                <p class="error-text">
+                  Please enter atleast 8 character with number and symbol
+                </p>
+              </span>
             </div>
-            <div class="form-link">
-              <a href="#" class="forgot-class">Forgot password?</a>
-            </div>
-            <div class="field input-field">
-              <button>Login</button>
+
+            <div class="input-field botton">
+              <input type="submit" value="Submit Now" />
             </div>
           </form>
           <div class="form-link">
@@ -44,7 +64,7 @@
         </div>
         <div class="line"></div>
         <div class="media-options">
-          <a href="#" class="field google">
+          <a href="#" class="input-field google">
             <img
               src="./assets/img/login-img/google.png"
               alt=""

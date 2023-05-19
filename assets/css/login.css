@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Merriweather&family=Montserrat&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800&family=Merriweather&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800&family=Merriweather&family=Montserrat&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap");
 
@@ -6,18 +6,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
-  height: 100vh;
-  width: 100%;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2f58cd;
+  background: #4070f4;
   flex-direction: column;
-  column-gap: 30px;
 }
 
 .container .logo {
@@ -32,68 +30,87 @@
 }
 
 .form {
-  /* position: absolute; */
-  max-width: 430px;
-  inline-size: 100%;
-  padding-block: 15px;
-  padding-inline: 30px;
-  border-radius: 6px;
-  background: #fff;
+  position: relative;
+  max-width: 370px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: #fff;
   margin-top: 30px;
 }
-.signup {
-  margin-top: 25px;
-}
-
-header {
-  font-size: 28px;
+.form header {
+  font-size: 22px;
   font-weight: 600;
-  color: #232836;
+  color: #333;
   text-align: center;
 }
-
-.form .field {
-  height: 50px;
-  width: 100%;
-  margin-top: 20px;
-  position: relative;
-  border-radius: 6px;
+.form form {
+  margin-top: 30px;
 }
-.field input,
-.field button {
+form .field {
+  margin-bottom: 20px;
+}
+form .input-field {
+  position: relative;
+  height: 55px;
   width: 100%;
+}
+.input-field input {
   height: 100%;
+  width: 100%;
+  outline: none;
   border: none;
+  border-radius: 8px;
+  padding: 0 15px;
+  border: 1px solid #d1d1d1;
+}
+.invalid input {
+  border-color: #d93025;
+}
+.input-field .show-hide {
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #919191;
+  cursor: pointer;
+  padding: 3px;
+}
+.field .error {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+  color: #d93025;
+  font-size: 13px;
+  display: none;
+}
+.invalid .error {
+  display: flex;
+}
+.error .error-icon {
+  margin-right: 6px;
+  font-size: 15px;
+}
+.create-password .error {
+  align-items: flex-start;
+}
+.create-password .error-icon {
+  margin-top: 4px;
+}
+.button {
+  margin: 25px 0 6px;
+}
+.botton input {
+  color: #fff;
   font-size: 16px;
   font-weight: 400;
-  border-radius: 6px;
-}
-.field input {
-  padding: 0 15px;
-  outline: none;
-  border: 1px solid #cacaca;
-}
-.field input {
-  border-bottom-width: 2px;
-}
-.eye-icon {
-  position: absolute;
-  font-size: 18px;
-  color: #8b8b8b;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
+  background-color: #4070f4;
   cursor: pointer;
-  padding: 5px;
-}
-.field button {
   transition: all 0.3s ease;
-  background-color: #0171d3;
-  color: #fff;
-  cursor: pointer;
 }
-.field button:hover {
-  background-color: #016dcb;
+.botton input:hover {
+  background-color: #0e4bf1;
 }
 .form-link {
   text-align: center;
@@ -104,12 +121,10 @@ header {
   font-size: 14px;
   font-weight: 400;
   color: #232836;
-}
-.form a {
   text-decoration: none;
-  color: #0171d3;
 }
-.form a:hover {
+
+.form-link a:hover {
   text-decoration: underline;
 }
 .line {
@@ -128,6 +143,15 @@ header {
   background-color: #fff;
   color: #8b8b8b;
   padding: 0 15px;
+}
+
+.media-options .input-field {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+  border-radius: 6px;
+  text-decoration: none;
 }
 .media-options a {
   display: flex;
@@ -153,12 +177,10 @@ a.google span {
   color: #000;
   font-weight: 500;
   opacity: 0.6;
-  font-size: 20px;
+  font-size: 16px;
   text-decoration: none;
 }
-.media-options a span {
-  text-decoration: none;
-}
+
 @media screen and (max-width: 400px) {
   .form {
     padding: 15px 10px;
