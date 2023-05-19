@@ -12,6 +12,58 @@ const balanceValue = document.getElementById("balance-amount");
 const list = document.getElementById("list");
 let tempAmount = 0;
 
+
+//Array of Multiple users
+const userDashboard = [
+  {
+    id: 0,
+    name: "Efe Salubi",
+    income: "512,000",
+    expenditure: "300,000",
+    currentBalanceValue: "#32,000",
+    groceryValue: "20,000",
+    rentValue: "700,000",
+    foodValue: "300,000",
+    medicineValue: "70,000",
+  },
+  {
+    id: 1,
+    name: "Efe Salubi",
+    income: "512,000",
+    expenditure: "300,000",
+    currentBalanceValue: "#32,000",
+    groceryValue: "20,000",
+    rentValue: "700,000",
+    foodValue: "300,000",
+    medicineValue: "70,000",
+  },
+  {
+    id: 2,
+    name: "Chioma Ukoha",
+    income: "512,000",
+    expenditure: "300,000",
+    currentBalanceValue: "#32,000",
+    groceryValue: "20,000",
+    rentValue: "700,000",
+    foodValue: "300,000",
+    medicineValue: "70,000",
+  },
+  {
+    id: 3,
+    name: "Edet Effiong",
+    income: "512,000",
+    expenditure: "300,000",
+    currentBalanceValue: "#32,000",
+    groceryValue: "20,000",
+    rentValue: "700,000",
+    foodValue: "300,000",
+    medicineValue: "70,000",
+  },
+
+  // console.log(userDashboard.id)
+];
+
+console.log(userDashboard);
 //Set Budget Part
 totalAmountButton.addEventListener("click", () => {
   tempAmount = totalAmount.value;

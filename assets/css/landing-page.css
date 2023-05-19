@@ -99,16 +99,18 @@ nav a:hover{
 }
 .write-up h3{
     font-family: "Unbounded", cursive;
+    font-size: 55px;
 } 
 .write-up{
     padding-left: 20px;
     align-content: center;
     margin-top: 40px ;
-    font-size: 30px;
+    font-size: 20px;
     color: black;
 }
 .write-up p {
     font-family: 'Montserrat', sans-serif;
+    padding-bottom: 10px;
 }
 .sign-up-btn{
     border: none;
