@@ -8,15 +8,22 @@ let responseMessage = document.getElementById("response");
 document.getElementById("submit-btn").addEventListener("click", function (event){
   event.preventDefault(); //prevent form submission
   if (username.value && email.value && message.value) {
-    responseMessage.innerHTML = "<span> Thank you," + username.value + "! Your message has been received. </span>";
+    swal(
+      "Message received!" + " " + username.value, "We'll get back to you via your email address!", "success");
+   
+    //responseMessage.innerHTML = "<span> Thank you," + username.value + "! Your message has been received. </span>";
+
     username.value = "";
     email.value ="";
     message.value ="";
 
     //display the response message
-    responseMessage.style.color = "green";
+    //responseMessage.style.color = "green";
   } else {
-    responseMessage.innerHTML = "<span> All input must be filled Please!</span>";
-    responseMessage.style.color = "red";
+    swal(
+      "All input must be filled Please!"," ", "error");
+      
+    //responseMessage.innerHTML = "<span> All input must be filled Please!</span>";
+    //responseMessage.style.color = "red";
   }
 });
